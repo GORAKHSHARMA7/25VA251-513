@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+function demo(){
+    console.log("hello ABES")
+}
+demo();
+
+//with parameter
+
+// function cal(a,b){
+//     var num1=a;
+//     var num2=b;
+//     console.log("addition of two no.is" + (num1 + num2))
+// }
+// cal(1,2)
+
+function add(a,b=5){
+var num1=a;
+var num2=b;
+
+var res1=num1+num2
+console.log("ADDITION OG TO NO.IS"+(res1))
+}
+
+function mull(a,b=8){
+    var num1=a;
+    var num2=b;
+    var res2=a*b
+    console.log("multiply of to no. is"+(res2))
+}
+
+function div(a,b=4){
+    var num1=a;
+var num2=b;
+var res3=a/b;
+console.log("division of two no."+(res3))
+
+}
+
+add(3,5)
+mull(6,6)
+div(4,2)
+
+
+//shortes way to write above function i.e by arrow function
+
+let demo1=()=>console.log("hello java Script");
+demo();
+
+
+(function(){
+    console.log("LIFEi JS");
+})();
+
+//calllback in synchronous
+
+function addRes(callback){
+var num1=5;
+var num2=10;
+var res=num1+num2;
+callback(res)
+
+}
+function result(res){
+    console.log("Add of two no. is"+ res)
+}
+addRes(result)
+
+//asynchronous
+function hello(){
+    document.writeln("Hello ABES");
+
+}
+setTimeout(hello,5000)
+    </script>
+</body>
+</html>

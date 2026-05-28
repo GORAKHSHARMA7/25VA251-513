@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var MyName ="Gorakh"
+        console.log("my name is " + MyName);
+        console.log(typeof(MyName));
+
+        //number 
+        var no =8182757871;
+        console.log("my mobole no is " + no);    
+         console.log(typeof(no));
+
+         //boolean
+
+          var isMarried=true
+            console.log("is married " + isMarried);
+                console.log(typeof(isMarried));
+    
+                //undefined
+    
+                var myName;
+                console.log(myName);
+                console.log(typeof(myName));
+
+         //bigInt
+
+        var myValue = BigInt(6826919829215456);
+        console.log(myValue);
+        console.log(typeof(myValue));
+
+
+        //symbol
+
+        var val1 = Symbol("Hello");
+        var val2 = Symbol("Hello");
+         console.log(val1==val2);
+         console.log(typeof(val1)  + "and"   + typeof(val2));
+
+
+          let myInfo={
+            name: "Gorakh",
+            eMail: "dshhsdggacbkvdj@gmail.com",
+            isMarried: false,
+            address: "null",
+            branch: "CSE",
+            Section: 18
+          };
+          console.log(myInfo);
+          console.log(Object.keys(myInfo).length);
+          console.log(myInfo.branch);
+
+
+          //array
+          let studentDetails=[
+            "Megha",
+            24,
+             false, 
+            "jhdshghsdcvvzckgac.com",
+            "GZB"];
+            
+            console.log(studentDetails[2]);
+            console.log(studentDetails.length);
+
+            for(i=0 ;i<studentDetails; i++){
+                console.log(studentDetails[i]);
+            }
+
+
+            function myCal(){
+                let a = 10;
+                let b = 20;
+                let sum = a + b;
+                console.log("the sum of a and b is " + sum);
+            }
+           myCal();
+
+    </script>
+    
+</body>
+</html>
